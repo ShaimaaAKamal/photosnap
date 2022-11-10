@@ -1,12 +1,17 @@
-root{
+:root{
     --lightGray:#DFDFDF;
     --siteOrange:#FFC593;
     --sitePink:#BC7198;
     --siteBlue:#5A77FF;
 }
+
+
 button{
-    font-weight: bold;
+    font-weight: 600;
     font-size:.75rem;
+    border:none;
+    padding:.5rem .9rem;
+    outline: 0;
 }
 .mainBtnWbg{
     background-color: #000;
@@ -14,7 +19,7 @@ button{
 }
 
 .mainBtnWbg:hover , .mainBtnBbg:hover{
-    background-color: var(--lightGray);
+    background-color:#979797;
     color:#000;
 }
 
@@ -33,4 +38,53 @@ button{
     color:#fff;
 }
 
+.nav-link{
+    font-size: .75rem;
+    color:#000;
+    padding-left:1rem !important;
+    padding-right: 1rem !important;
+}
 
+.nav-link:hover{
+    color:var(--bs-nav-link-color);
+}
+.nav-link.active{
+    color:var(--sitePink) !important;
+}
+
+.borderBottom{
+    border-bottom:.5px solid #979797;
+}
+
+.menuWidth{
+    width: 70%;
+}
+.navbar-toggler[aria-expanded='true'] #menu,.navbar-toggler[aria-expanded='false'] #close{
+    display: none;
+}
+.navbar-toggler[aria-expanded='true'] #close,.navbar-toggler[aria-expanded='false'] #menu{
+    display: inline-block;
+}
+
+@media screen and (min-width:768px) {
+    .navbar-expand-lg .navbar-toggler {
+        display: none;
+    }
+
+    .navbar-expand-lg .navbar-collapse {
+        display: flex!important;
+        flex-basis: auto;
+    }
+
+    .navbar-expand-lg .navbar-nav {
+        flex-direction: row;
+    }
+
+    .borderBottom{
+        border-bottom:none;
+    }
+
+    .menuWidth{
+        width:auto;
+    }
+}

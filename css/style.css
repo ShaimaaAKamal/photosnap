@@ -13,6 +13,7 @@ button{
     border:none;
     padding:.5rem .9rem;
     outline: 0;
+    background-color: transparent;
 }
 .mainBtnWbg{
     background-color: #000;
@@ -27,7 +28,7 @@ button{
 .secondaryBtnWbg{
     color:#000;
 }
-.secondaryBtnWbg:hover,.secondaryBtBWbg:hover{
+.secondaryBtnWbg:hover,.secondaryBtnBbg:hover{
     text-decoration:underline;
 }
 .mainBtnBbg{
@@ -36,7 +37,10 @@ button{
 }
 
 .secondaryBtnBbg{
-    color:#fff;
+    color:rgba(255, 255, 255, 0.784);
+    font-size: .9rem;
+    padding:.5rem 0;
+    font-weight: normal;
 }
 
 .nav-link{
@@ -72,6 +76,20 @@ nav{
     width:100vw;
 }
 
+.imgSmall{
+    display: inline-block;
+}
+
+.imgMedium,.imgLarge{
+    display: none;
+}
+
+.homeImage{
+    order:-1;
+}
+h2{
+    line-height: 1;
+}
 @media screen and (min-width:768px) {
     .navbar-expand-lg .navbar-toggler {
         display: none;
@@ -93,4 +111,26 @@ nav{
     .menuWidth{
         width:auto;
     }
+
+    .imgMedium{
+        display: inline-block;
+    }
+    
+    .imgSmall,.imgLarge{
+        display: none;
+    }
+    .homeImage{
+        order:0;
+    }
+}
+
+@media screen and (min-width:992px){
+    .imgLarge{
+        display: inline-block;
+    }
+    
+    .imgMedium,.imgSmall{
+        display: none;
+    }
+
 }

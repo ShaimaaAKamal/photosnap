@@ -6,6 +6,7 @@
 }
 
 
+
 button{
     font-weight: 600;
     font-size:.75rem;
@@ -64,6 +65,11 @@ button{
 }
 .navbar-toggler[aria-expanded='true'] #close,.navbar-toggler[aria-expanded='false'] #menu{
     display: inline-block;
+}
+
+nav{
+    position: fixed;
+    width:100vw;
 }
 
 @media screen and (min-width:768px) {

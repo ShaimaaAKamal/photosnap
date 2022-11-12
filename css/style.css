@@ -39,6 +39,10 @@ button{
     color:#000;
 }
 
+.fLink{
+    font-size: .8rem;
+}
+
 .secondaryBtnBbg{
     color:rgba(255, 255, 255, 0.784);
     font-size: .9rem;
@@ -56,7 +60,7 @@ button{
 .nav-link:hover{
     color:var(--bs-nav-link-color);
 }
-.nav-link.active{
+.nav-link.active,.siteLinks a:hover{
     color:var(--sitePink) !important;
 }
 
@@ -149,6 +153,10 @@ h2{
 .pFeatureWidth{
     width:88% !important;
 }
+
+.socials a:hover svg{
+    fill:url(#a);
+}
 @media screen and (min-width:768px) {
     .navbar-expand-lg .navbar-toggler {
         display: none;
@@ -188,6 +196,12 @@ h2{
         left:-3rem;
         top:unset;
     }
+
+    .siteLinks{
+        position: absolute;
+        top:40px;
+        left:0px;
+    }
 }
 
 @media screen and (min-width:992px){
@@ -197,6 +211,11 @@ h2{
     
     .imgMedium,.imgSmall{
         display: none;
+    }
+
+    .siteLinks{
+        position: static;
+        
     }
 
 }

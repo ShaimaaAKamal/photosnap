@@ -90,6 +90,17 @@ nav{
 h2{
     line-height: 1;
 }
+
+.homeInfo >div::before{
+    content:'';
+    background-image:linear-gradient(rgb(90, 119, 255),rgb(188, 113, 152),rgb(255, 197, 147));
+    position: absolute;
+    border-radius: 2px;
+    width:20%;
+    height:3px;
+    top:0
+   
+}
 @media screen and (min-width:768px) {
     .navbar-expand-lg .navbar-toggler {
         display: none;
@@ -121,6 +132,13 @@ h2{
     }
     .homeImage{
         order:0;
+    }
+
+    .homeInfo >div::before{
+        width:3px;
+        height:100%;
+        left:-3rem;
+        top:unset;
     }
 }
 

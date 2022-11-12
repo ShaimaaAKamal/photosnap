@@ -141,6 +141,14 @@ h2{
 .cardCaption:hover .cardInfo::after{
     opacity:1;
 }
+
+.hFeature{
+    height: 72px;
+}
+
+.pFeatureWidth{
+    width:88% !important;
+}
 @media screen and (min-width:768px) {
     .navbar-expand-lg .navbar-toggler {
         display: none;

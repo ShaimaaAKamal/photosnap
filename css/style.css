@@ -27,6 +27,9 @@ button{
 
 .secondaryBtnWbg{
     color:#000;
+    font-size: .9rem;
+    padding:.5rem 0;
+    font-weight: normal;
 }
 .secondaryBtnWbg:hover,.secondaryBtnBbg:hover{
     text-decoration:underline;
@@ -84,7 +87,7 @@ nav{
     display: none;
 }
 
-.homeImage{
+.homeImage,.designImage{
     order:-1;
 }
 h2{
@@ -130,7 +133,7 @@ h2{
     .imgSmall,.imgLarge{
         display: none;
     }
-    .homeImage{
+    .homeImage,.designImage{
         order:0;
     }
 

@@ -143,7 +143,7 @@ h2{
 
 
 .cardCaption:hover{
-  transform: translateY(-15%);
+  transform: translateY(-8%);
 }
 
 .cardCaption:hover .cardInfo::after{
@@ -158,8 +158,10 @@ h2{
     width:88% !important;
 }
 
-.socials a:hover svg{
-    fill:url(#a);
+.beta{
+    background-image: url('../assets/shared/mobile/bg-beta.jpg');
+    background-size: cover;
+    
 }
 @media screen and (min-width:768px) {
     .navbar-expand-lg .navbar-toggler {
@@ -206,6 +208,14 @@ h2{
         top:40px;
         left:0px;
     }
+
+    .beta{
+        background-image: url('../assets/shared/tablet/bg-beta.jpg');
+    }
+
+    .inviteWidth{
+        width:85%;
+    }
 }
 
 @media screen and (min-width:992px){
@@ -222,4 +232,11 @@ h2{
         
     }
 
+    .beta{
+        background-image: url('../assets/shared/desktop/bg-beta.jpg');
+    }
+
+    .inviteWidth{
+        width:70%;
+    }
 }

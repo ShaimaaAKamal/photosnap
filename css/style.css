@@ -78,11 +78,14 @@ button{
     display: inline-block;
 }
 
-nav{
+nav.navbar{
     position: fixed;
     width:100vw;
+    z-index: 999;
 }
-
+.first{
+    padding-top: 40px;
+}
 .imgSmall{
     display: inline-block;
 }

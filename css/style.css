@@ -226,6 +226,19 @@ left:0;
     font-size: .5rem;
 }
 
+.beta{
+    position: relative;
+}
+.beta::before{
+    content:'';
+    position: absolute;
+    background-image:linear-gradient(rgb(90, 119, 255),rgb(188, 113, 152),rgb(255, 197, 147));
+    height: 4px;
+    width:120px;
+    left:3rem;
+    top:0;
+}
+
 
 @media screen and (min-width:768px) {
     .navbar-expand-lg .navbar-toggler {
@@ -298,6 +311,13 @@ left:0;
 
 .compareWidth > .row{
     text-align: end;
+}
+
+
+.beta::before{
+    height: 100%;
+    width:4px;
+    left:0;
 }
 
 }
